@@ -36,3 +36,17 @@ Utilize os seguintes Endpoint para efetuar as requisições baseando em sua apli
 <b>Exemplo:</b> http://localhost:8098/contacts<br/>
 <b>Header: </b> content-type: application/json<br/>
 <b>Body:</b> { "name" : "Nome do contato" }<br/><br/>
+
+<b>UPDATE: </b> Adiciona um novo registro<br/>
+<b>Método: </b> PUT <br>
+<b>Endpoint:</b> URL_BASE/contacts<br/>
+<b>Exemplo:</b> http://localhost:8098/contacts<br/>
+<b>Header: </b> content-type: application/json<br/>
+<b>Body:</b> {	"idContact": 23,	"name" : "Nome editado" } <br/><br/>
+
+<b>DELELTE: </b> Remove o registro<br/>
+<b>Método: </b> DELETE <br>
+<b>Endpoint:</b> URL_BASE/contacts<br/>
+<b>Exemplo:</b> http://localhost:8098/contacts<br/>
+<b>Header: </b> content-type: application/json<br/>
+<b>Body:</b> {	"idContact": 23 } <br/><br/>
