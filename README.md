@@ -13,3 +13,19 @@ Edite o arquivo <b>".env"</b> para as configurações de sua necessidade:<br>
 <b>DATABASE=</b>Definição do nome da base dados.</br>
 <b>DATABASE_USER=</b>Definição do usuario da base dados.</br>
 <b>DATABASE_PASSWORD=</b>Definição da senha da base dados.</br>
+
+# Endpoints
+Utilize os seguintes Endpoint para efetuar as requisições baseando em sua aplicação local.<br>
+
+<b>Url base:</b> http://localhost:<b>PORT</b> onde PORT é a porta configurada no seu arquivo .env<br/>
+<b>Exemplo: </b> http://localhost:8098<br><br>
+
+<b>GET BY ID: </b> Mostra o contato encontrado através do parametro 'idContact'<br/>
+<b>Método:<b> GET <br>
+<b>Endpoint:</b> URL_BASE/contacts/{idContact}<br/>
+<b>Exemplo:</b> http://localhost:8098/contacts/23<br/><br/>
+
+<b>LIST ALL: </b> Lista todos os registros de contato<br/>
+<b>Método:<b> GET <br>
+<b>Endpoint:</b> URL_BASE/contacts<br/>
+<b>Exemplo:</b> http://localhost:8098/contacts<br/><br/>
