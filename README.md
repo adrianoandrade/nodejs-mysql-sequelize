@@ -29,3 +29,10 @@ Utilize os seguintes Endpoint para efetuar as requisições baseando em sua apli
 <b>Método: </b> GET <br>
 <b>Endpoint:</b> URL_BASE/contacts<br/>
 <b>Exemplo:</b> http://localhost:8098/contacts<br/><br/>
+
+<b>CREATE: </b> Adiciona um novo registro<br/>
+<b>Método: </b> POST <br>
+<b>Endpoint:</b> URL_BASE/contacts<br/>
+<b>Exemplo:</b> http://localhost:8098/contacts<br/>
+<b>Header: </b> content-type: application/json<br/>
+<b>Body:</b> { "name" : "Nome do contato" }<br/><br/>
