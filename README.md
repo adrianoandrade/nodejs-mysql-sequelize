@@ -1,5 +1,5 @@
 # nodejs-mysql-sequelize
-Api Rest Full em nodeJs utilizando banco de dados mysql e Sequelize.
+Api Rest Full em nodeJs utilizando banco de dados mysql e Sequelize (ORM).
 
 # Instalação
 Após fazer baixar o projeto acesse o diretório baixado e execute o comando <b>"npm install"</b> 
