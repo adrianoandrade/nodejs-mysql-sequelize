@@ -2,8 +2,9 @@
 Api Rest Full em nodeJs utilizando banco de dados mysql e Sequelize (ORM).
 
 # Instalação
-Após fazer baixar o projeto acesse o diretório baixado e execute o comando <b>"npm install"</b> 
-para baixar as dependencias do projeto
+1 - git clone https://github.com/adrianoandrade/nodejs-mysql-sequelize.git<br/>
+2 - cd nodejs-mysql-sequelize<br/>
+3 - npm install<br/>
 
 # Configuração
 Edite o arquivo <b>".env"</b> para as configurações de sua necessidade:<br>
@@ -13,6 +14,9 @@ Edite o arquivo <b>".env"</b> para as configurações de sua necessidade:<br>
 <b>DATABASE=</b>Definição do nome da base dados.</br>
 <b>DATABASE_USER=</b>Definição do usuario da base dados.</br>
 <b>DATABASE_PASSWORD=</b>Definição da senha da base dados.</br>
+
+# Rodando o projeto
+Execute o comando - node index.js
 
 # Endpoints
 Utilize os seguintes Endpoint para efetuar as requisições baseando em sua aplicação local.<br>
