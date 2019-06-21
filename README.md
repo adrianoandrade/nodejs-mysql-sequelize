@@ -19,41 +19,9 @@ Edite o arquivo <b>".env"</b> para as configurações de sua necessidade:<br>
 Execute o comando - node index.js
 
 # Endpoints
-Utilize os seguintes Endpoint para efetuar as requisições baseando em sua aplicação local.<br>
+Esta incluso no projeto no diretório "material" o projeto "Postman"  para facilitar as chamadas dos enpoints .<br>
+Basta importa-lo para seu postman.
 
-<b>Url base:</b> http://localhost:<b>PORT</b> onde PORT é a porta configurada no seu arquivo .env<br/>
-<b>Exemplo: </b> http://localhost:8098<br><br>
-
-<b>GET BY ID: </b> Mostra o contato encontrado através do parametro 'idContact'<br/>
-<b>Método: </b> GET <br>
-<b>Endpoint:</b> URL_BASE/contacts/{idContact}<br/>
-<b>Exemplo:</b> http://localhost:8098/contacts/23<br/><br/>
-
-<b>LIST ALL: </b> Lista todos os registros de contato<br/>
-<b>Método: </b> GET <br>
-<b>Endpoint:</b> URL_BASE/contacts<br/>
-<b>Exemplo:</b> http://localhost:8098/contacts<br/><br/>
-
-<b>CREATE: </b> Adiciona um novo registro<br/>
-<b>Método: </b> POST <br>
-<b>Endpoint:</b> URL_BASE/contacts<br/>
-<b>Exemplo:</b> http://localhost:8098/contacts<br/>
-<b>Header: </b> content-type: application/json<br/>
-<b>Body:</b> { "name" : "Nome do contato" }<br/><br/>
-
-<b>UPDATE: </b> Adiciona um novo registro<br/>
-<b>Método: </b> PUT <br>
-<b>Endpoint:</b> URL_BASE/contacts<br/>
-<b>Exemplo:</b> http://localhost:8098/contacts<br/>
-<b>Header: </b> content-type: application/json<br/>
-<b>Body:</b> {	"idContact": 23,	"name" : "Nome editado" } <br/><br/>
-
-<b>DELELTE: </b> Remove o registro<br/>
-<b>Método: </b> DELETE <br>
-<b>Endpoint:</b> URL_BASE/contacts<br/>
-<b>Exemplo:</b> http://localhost:8098/contacts<br/>
-<b>Header: </b> content-type: application/json<br/>
-<b>Body:</b> {	"idContact": 23 } <br/><br/>
 
 ## FRONT-END (WEB)
 Você pode fazer o download do front-end em reactJs https://github.com/adrianoandrade/react-redux-api
