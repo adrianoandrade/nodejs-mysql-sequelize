@@ -1,0 +1,204 @@
+{
+	"id": "8e1fa235-a533-091a-192e-4f6947536f2b",
+	"name": "adrianoandrade",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"name": "contacts",
+			"description": "",
+			"collectionId": "8e1fa235-a533-091a-192e-4f6947536f2b",
+			"order": [
+				"e081d44f-da89-16d1-7121-7d63fd90bc7f",
+				"9fc06846-b9d9-bed5-2c4f-fadf80b0adfb",
+				"2309ac12-86a1-7dbd-7bc2-d08c8249ba10",
+				"dcf87277-e44f-c147-c1bb-871484eefe0c",
+				"af28bd7c-42ee-d659-7117-c236ab8829d3"
+			],
+			"owner": "1017369",
+			"folder": "30d8b9b3-3e43-b0cf-cc17-d20dddaf7365",
+			"folders_order": [],
+			"id": "0a3cba8b-3683-afc2-71ab-8ec652925402"
+		},
+		{
+			"name": "node-mysql-sequelize",
+			"description": "",
+			"collectionId": "8e1fa235-a533-091a-192e-4f6947536f2b",
+			"order": [
+				"159c852a-ccfd-ac79-ef69-befffd23515b"
+			],
+			"owner": "1017369",
+			"folders_order": [
+				"0a3cba8b-3683-afc2-71ab-8ec652925402"
+			],
+			"id": "30d8b9b3-3e43-b0cf-cc17-d20dddaf7365"
+		}
+	],
+	"folders_order": [
+		"30d8b9b3-3e43-b0cf-cc17-d20dddaf7365"
+	],
+	"timestamp": 1560793938095,
+	"owner": "1017369",
+	"public": false,
+	"requests": [
+		{
+			"id": "159c852a-ccfd-ac79-ef69-befffd23515b",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8098/check",
+			"folder": "30d8b9b3-3e43-b0cf-cc17-d20dddaf7365",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1560794271819,
+			"name": "check",
+			"description": "",
+			"collectionId": "8e1fa235-a533-091a-192e-4f6947536f2b",
+			"responses": []
+		},
+		{
+			"id": "2309ac12-86a1-7dbd-7bc2-d08c8249ba10",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8098/contacts",
+			"folder": "0a3cba8b-3683-afc2-71ab-8ec652925402",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1560967465319,
+			"name": "CREATE",
+			"description": "",
+			"collectionId": "8e1fa235-a533-091a-192e-4f6947536f2b",
+			"responses": [],
+			"rawModeData": "{\n\t\"name\" : \"Adriano de Andrade\"\n}"
+		},
+		{
+			"id": "9fc06846-b9d9-bed5-2c4f-fadf80b0adfb",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8098/contacts",
+			"folder": "0a3cba8b-3683-afc2-71ab-8ec652925402",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1560797352693,
+			"name": "LIST",
+			"description": "",
+			"collectionId": "8e1fa235-a533-091a-192e-4f6947536f2b",
+			"responses": [],
+			"isFromCollection": true
+		},
+		{
+			"id": "af28bd7c-42ee-d659-7117-c236ab8829d3",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8098/contacts",
+			"folder": "0a3cba8b-3683-afc2-71ab-8ec652925402",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1560798685728,
+			"name": "DELETE",
+			"description": "",
+			"collectionId": "8e1fa235-a533-091a-192e-4f6947536f2b",
+			"responses": [],
+			"isFromCollection": true,
+			"rawModeData": "{\n\t\"idContact\": 3\n}"
+		},
+		{
+			"id": "dcf87277-e44f-c147-c1bb-871484eefe0c",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8098/contacts",
+			"folder": "0a3cba8b-3683-afc2-71ab-8ec652925402",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1560797941152,
+			"name": "UPDATE",
+			"description": "",
+			"collectionId": "8e1fa235-a533-091a-192e-4f6947536f2b",
+			"responses": [],
+			"isFromCollection": true,
+			"rawModeData": "{\n\t\"idContact\": 2,\n\t\"name\" : \"José Santos Silva\"\n}"
+		},
+		{
+			"id": "e081d44f-da89-16d1-7121-7d63fd90bc7f",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8098/contacts/39",
+			"folder": "0a3cba8b-3683-afc2-71ab-8ec652925402",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1561147516061,
+			"name": "GET BY ID",
+			"description": "",
+			"collectionId": "8e1fa235-a533-091a-192e-4f6947536f2b",
+			"responses": []
+		}
+	]
+}
