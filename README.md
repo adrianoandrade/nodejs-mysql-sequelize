@@ -54,3 +54,6 @@ Utilize os seguintes Endpoint para efetuar as requisições baseando em sua apli
 <b>Exemplo:</b> http://localhost:8098/contacts<br/>
 <b>Header: </b> content-type: application/json<br/>
 <b>Body:</b> {	"idContact": 23 } <br/><br/>
+
+## FRONT-END (WEB)
+Você pode fazer o download do front-end em reactJs https://github.com/adrianoandrade/react-redux-api
