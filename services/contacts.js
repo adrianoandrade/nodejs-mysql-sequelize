@@ -6,7 +6,11 @@ const ContactsService = {
     List: async () => new Promise(async (resolve, reject) => {
         try {
             await connection.sync();
-            const contacts = await ContactsModel.findAll();
+            const contacts = await ContactsModel.findAll({
+                order: [
+                    ['createdAt', 'DESC'],
+                ]
+            });
             resolve(contacts);
         }
         catch (err) {
@@ -28,7 +32,7 @@ const ContactsService = {
     Update: async (contact) => new Promise(async (resolve, reject) => {
         try {
             await connection.sync();
-            const {idContact,name} = contact;
+            const { idContact, name } = contact;
             await ContactsModel.update({ name }, { where: { idContact } });
             resolve();
         }
@@ -40,7 +44,7 @@ const ContactsService = {
     Delete: async (contact) => new Promise(async (resolve, reject) => {
         try {
             await connection.sync();
-            const {idContact} = contact;
+            const { idContact } = contact;
             await ContactsModel.destroy({ where: { idContact } });
             resolve();
         }
@@ -48,6 +52,18 @@ const ContactsService = {
             reject(new Error(err));
         }
     }),
+
+    Get: async(contact) => new Promise(async (resolve, reject) => {
+        try {
+            await connection.sync();
+            const { idContact } = contact;
+            const result = await ContactsModel.findOne({ where :{  idContact }});
+            resolve(result);
+        }
+        catch(err){
+            reject(new Error(err));
+        }
+    })
 
 };
 

@@ -55,7 +55,10 @@ module.exports = function (app) {
     // GET BY ID
     app.get('/contacts/:idContact', async (req, res) => {
         try {
-            res.json({ error: false, data: { nome: 'aada' } });
+            const { idContact } = req.params;
+            const objContact = { idContact }
+            const contact =  await ContactsService.Get(objContact);
+            res.json({ error: false, data: contact });
         }
         catch (err) {
             res.json({ error: true, detail: err.message })
