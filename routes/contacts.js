@@ -8,10 +8,10 @@ module.exports = function (app) {
             const { name } = req.body;
             const objContact = { name }
             var result = await ContactsService.Create(objContact);
-            res.json({ error: false, data: result });
+            res.status(200).json({ error: false, data: result });
         }
         catch (err) {
-            res.json({ error: true, detail: err.message })
+            res.status(500).json({ error: true, detail: err.message })
         }
     });
 
@@ -19,10 +19,10 @@ module.exports = function (app) {
     app.get('/contacts', async (req, res) => {
         try {
             var contacts = await ContactsService.List();
-            res.json({ error: false, data: contacts });
+            res.status(200).json({ error: false, data: contacts });
         }
         catch (err) {
-            res.json({ error: true, detail: err.message })
+            res.status(500).json({ error: true, detail: err.message })
         }
     });
 
@@ -32,10 +32,10 @@ module.exports = function (app) {
             const { idContact, name } = req.body;
             const objContact = { idContact, name }
             await ContactsService.Update(objContact);
-            res.json({ error: false });
+            res.status(200).json({ error: false });
         }
         catch (err) {
-            res.json({ error: true, detail: err.message })
+            res.status(500).json({ error: true, detail: err.message })
         }
     });
 
@@ -45,10 +45,10 @@ module.exports = function (app) {
             const { idContact } = req.body;
             const objContact = { idContact }
             await ContactsService.Delete(objContact);
-            res.json({ error: false });
+            res.status(200).json({ error: false });
         }
         catch (err) {
-            res.json({ error: true, detail: err.message })
+            res.status(500).json({ error: true, detail: err.message })
         }
     });
 
@@ -57,11 +57,11 @@ module.exports = function (app) {
         try {
             const { idContact } = req.params;
             const objContact = { idContact }
-            const contact =  await ContactsService.Get(objContact);
-            res.json({ error: false, data: contact });
+            const contact = await ContactsService.Get(objContact);
+            res.status(200).json({ error: false, data: contact });
         }
         catch (err) {
-            res.json({ error: true, detail: err.message })
+            res.status(500).json({ error: true, detail: err.message })
         }
     });
 
